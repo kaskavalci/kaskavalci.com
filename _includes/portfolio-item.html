@@ -1,7 +1,7 @@
 <div class="portfolio-item">
   {% if project.image_url %}
     <a href="{{ project.demo_url }}" target="_blank" rel="noopener">
-      <img src="{{ project.image_url }}" alt="{{ project.title }}" class="portfolio-image">
+      <img src="{{ site.baseurl }}{{ project.image_url }}" alt="{{ project.title }}" class="portfolio-image">
     </a>
   {% endif %}
   <h3 class="portfolio-title">{{ project.title }}</h3>

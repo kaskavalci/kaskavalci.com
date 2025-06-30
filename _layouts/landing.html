@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="{{ site.baseurl }}/assets/favicon.ico">
     <title>{{ page.title | default: site.title }}</title>
     <meta name="description" content="{{ site.description }}">
-    <link rel="stylesheet" href="/assets/css/theme.css">
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/theme.css">
 
     <style>
         /* Reset and base styles */
@@ -41,7 +41,7 @@
 <body>
     <div class="landing-container">
         <div class="content">
-            <img src="/assets/profile-photo.jpg" alt="Profile Photo" class="profile-photo">
+            <img src="{{ site.baseurl }}/assets/profile-photo.jpg" alt="Profile Photo" class="profile-photo">
             <h1 class="name">{{ site.name }}</h1>
             <p class="tagline">{{ site.tagline }}</p>
             <p class="description">{{ site.description }}</p>
@@ -65,5 +65,14 @@
             </div>
         </div>
     </div>
+    <!-- Feel free to delete this footer. FOSS FTW!-->
+    <footer class="site-footer">
+        <p>
+            Made by Halil Can Kaskavalci | {{ 'now' | date: '%Y' }} | MIT License
+            <br>
+            <a href="https://github.com/kaskavalci/simple-landing-page"
+            target="_blank" rel="noopener" class="">Make this yours!</a>
+        </p>
+    </footer>
 </body>
 </html>

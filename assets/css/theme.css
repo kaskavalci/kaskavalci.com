@@ -316,3 +316,22 @@ body {
         background-position: -200% 0;
     }
 }
+
+.site-footer {
+    margin-top: 1rem;
+    text-align: center;
+    color: hsl(var(--muted-foreground));
+    font-size: 0.7rem;
+    opacity: 0.85;
+    padding-bottom: 2rem;
+}
+
+.site-footer .section-divider {
+    margin: 1rem auto 0.5rem auto;
+    max-width: 800px;
+}
+
+.site-footer .link.outline {
+    margin-left: 0.25em;
+    margin-right: 0.25em;
+}

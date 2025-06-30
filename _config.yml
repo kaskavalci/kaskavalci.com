@@ -18,12 +18,13 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
+# Sample configuration for the landing page theme
+# Replace these values with your own!
 title: Halil Can Kaskavalci
 description: >- # this means to ignore newlines until "baseurl:"
   Engineering Leader @ Booking.com
 
   Always learning, occasionally building.
-
 name: Halil
 tagline: Leader | Father | Engineer | Learner
 baseurl: "" # the subpath of your site, e.g. /blog
@@ -50,10 +51,11 @@ portfolio:
     demo_url: "https://montessori-shopping-list.kaskavalci.com"
     # github_url: "https://github.com/username/project-one"
 
-  # - title: "Project Two"
-  #   description: "An innovative mobile app that solves real-world problems."
-  #   demo_url: "https://example.com"
-  #   github_url: "https://github.com/username/project-two"
+  - title: "Jekyll Landing Page"
+    description: "Basically this page"
+    image_url: "/assets/simple-landing-page.png"
+    demo_url: "https://kaskavalci.github.io/simple-landing-page/"
+    github_url: "https://github.com/kaskavalci/simple-landing-page"
 
   # - title: "Project Three"
   #   description: "A backend service with RESTful API and microservices architecture."
@@ -62,22 +64,3 @@ portfolio:
 # Build settings
 plugins:
   - jekyll-feed
-# Exclude from processing.
-# The following items will not be processed, by default.
-# Any item listed under the `exclude:` key here will be automatically added to
-# the internal "default list".
-#
-# Excluded items can be processed by explicitly listing the directories or
-# their entries' file path in the `include:` list.
-#
-# exclude:
-#   - .sass-cache/
-#   - .jekyll-cache/
-#   - gemfiles/
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules/
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
