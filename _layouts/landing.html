@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
-    <title>{{ site.title }}</title>
+    <title>{{ page.title | default: site.title }}</title>
     <meta name="description" content="{{ site.description }}">
+    <link rel="stylesheet" href="/assets/css/theme.css">
 
     <style>
         /* Reset and base styles */
@@ -38,6 +39,31 @@
     {{ content }}
 </head>
 <body>
-    <!-- Content is injected directly from the markdown file -->
+    <div class="landing-container">
+        <div class="content">
+            <img src="/assets/profile-photo.jpg" alt="Profile Photo" class="profile-photo">
+            <h1 class="name">{{ site.name }}</h1>
+            <p class="tagline">{{ site.tagline }}</p>
+            <p class="description">{{ site.description }}</p>
+
+            <!-- Personal Links Section -->
+            <h2 class="section-title">Connect</h2>
+            <div class="links">
+                {% include social-links.html %}
+            </div>
+
+            <!-- Portfolio Section -->
+            <hr class="section-divider">
+            <h2 class="section-title">Portfolio</h2>
+            <p class="section-description">A few fun side projects I've worked on</p>
+            <div class="portfolio-grid">
+                {% if site.portfolio %}
+                    {% for project in site.portfolio %}
+                        {% include portfolio-item.html project=project %}
+                    {% endfor %}
+                {% endif %}
+            </div>
+        </div>
+    </div>
 </body>
 </html>
