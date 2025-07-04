@@ -45,10 +45,10 @@ blog_url: "https://blog.kaskavalci.com"
 # - demo_url: (optional) Link to live demo
 # - github_url: (optional) Link to GitHub repository
 portfolio:
-  - title: "Montessori Shopping List"
-    image_url: "https://montessori-shopping-list.kaskavalci.com/gnome-logo.jpg"
+  - title: "Minifil"
+    image_url: "https://minifil.com/minifil.png"
     description: "AI assisted shopping list for kids"
-    demo_url: "https://montessori-shopping-list.kaskavalci.com"
+    demo_url: "https://minifil.com"
     # github_url: "https://github.com/username/project-one"
 
   - title: "Jekyll Landing Page"
